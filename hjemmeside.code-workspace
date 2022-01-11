@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "lyd"
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5513,
+    "liveServer.settings.multiRootWorkspaceName": "Hjemmeside-kopi"
+  }
+}

@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(assetliste/baggrunde/baggrund.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  margin: 3%;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 5%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Cairo;
+}
+
+ul li a:hover {
+  color: blueviolet;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h1 {
+  color: #c200e1;
+  font-size: 70px;
+  font-family: Anton;
+}
+
+p {
+  color: #c200e1;
+  font-size: 14px;
+  font-family: Cairo;
+}
+
+button {
+  width: 40%;
+  color: black;
+  font-size: 12px;
+  font-family: Cairo;
+  font-size: 120%;
+  padding: 0px 100;
+  background: #575757;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.row a {
+  display: inline-block;
+  font-size: 1em;
+  background: #585858;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  font-family: Cairo;
+}
+
+.row a:hover {
+  letter-spacing: 6px;
+}

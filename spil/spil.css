@@ -1,0 +1,170 @@
+#screen {
+  width: 100vw;
+  height: 56.25vw;
+  position: relative;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: none;
+  background-image: url(Din titel skærm);
+  background-size: cover;
+}
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: none;
+  background-image: url(din game over skærm);
+  background-size: cover;
+}
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: none;
+  background-image: url(din level complete skærm);
+  background-size: cover;
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(din baggrund);
+  background-size: cover;
+}
+
+#game_middleground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(din mellemgrund);
+  background-size: cover;
+}
+
+#game_foreground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(din forgrund);
+  background-size: cover;
+}
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#buttplug_container {
+  width: %;
+  aspect-ratio: 420/355;
+  position: absolute;
+  top: %;
+  left: %;
+}
+
+#buttplug_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(ui-elementer/dildoerkaktus/buttplug-asset.svg);
+  background-size: cover;
+}
+#(navn_på_dit_spil_element_2)_container {
+  width: %;
+  aspect-ratio: 420/355;
+  position: absolute;
+  top: %;
+  left: %;
+}
+
+#(navn_på_dit_spil_element_2)_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(dit spilelement som svg fil her, husk mappestruktur);
+  background-size: cover;
+}
+
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#score_board {
+  width: %;
+  aspect-ratio: ;
+  position: absolute;
+  top: %;
+  left: %;
+  background-image: url(dine point som svg fil her, husk mappestruktur);
+  background-size: cover;
+}
+
+#energy_board_1 {
+  width: %;
+  aspect-ratio: ;
+  position: absolute;
+  top: %;
+  left: %;
+  background-image: url(dine liv som svg fil her, husk mappestruktur);
+  background-size: cover;
+}
+
+#energy_board_2 {
+  width: %;
+  aspect-ratio: ;
+  position: absolute;
+  top: %;
+  left: %;
+  background-image: url(dine liv som svg fil her, husk mappestruktur);
+  background-size: cover;
+}
+
+#energy_board_3 {
+  width: 7%;
+  aspect-ratio: ;
+  position: absolute;
+  top: 0%;
+  left: 82%;
+  background-image: url(dine liv som svg fil her, husk mappestruktur);
+  background-size: cover;
+}
+
+#time_board {
+  width: %;
+  aspect-ratio: ;
+  position: absolute;
+  top: %;
+  left: %;
+  background-image: url(din tid som svg fil her, husk mappestruktur);
+  background-size: cover;
+}

@@ -1,0 +1,594 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  background-color: #181818;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 9%;
+}
+
+nav ul {
+  margin: 2%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Cairo;
+}
+
+ul li a:hover {
+  color: blueviolet;
+}
+
+#screen {
+  width: 100vw;
+  height: 56.25vw;
+  position: relative;
+  overflow: hidden;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(spil/ui-elementer/baggrunde/tittelskærm-baggrund.png);
+  background-size: cover;
+  z-index: 50;
+}
+
+#start_knap {
+  width: 10%;
+  height: 17%;
+  position: absolute;
+  aspect-ratio: 335.7/174.65;
+  top: 64%;
+  left: 48%;
+  background-image: url(spil/ui-elementer/knapper/start-asset.svg);
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes puls_kf {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#info_screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(spil/spilbagrunde/HOWTOPLAY.svg);
+  background-size: cover;
+}
+
+#start_knap2 {
+  width: 10%;
+  height: 17%;
+  position: absolute;
+  aspect-ratio: 335.7/174.65;
+  top: 79%;
+  left: 86%;
+  background-image: url(spil/ui-elementer/knapper/start-asset.svg);
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+#mute_knap1 {
+  width: 10%;
+  height: 17%;
+  position: absolute;
+  aspect-ratio: 335.7/174.65;
+  top: 40%;
+  left: 86%;
+  background-image: url(spil/ui-elementer/knapper/lyd-asset.svg);
+}
+
+#mute_knap2 {
+  width: 10%;
+  height: 17%;
+  position: absolute;
+  aspect-ratio: 335.7/174.65;
+  top: 50%;
+  left: 86%;
+  background-image: url(spil/ui-elementer/knapper/mute-asset.svg);
+}
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(spil/ui-elementer/baggrunde/you-lost-baggrund.png);
+  background-size: cover;
+  z-index: 50;
+}
+
+#game_over_points {
+  position: absolute;
+  top: 2%;
+  width: 81%;
+  text-align: center;
+  font-family: monospace;
+}
+
+#genstart_1 {
+  position: absolute;
+  height: 31%;
+  aspect-ratio: 343.7/325.65;
+  top: 67%;
+  left: 79%;
+  background-image: url(spil/ui-elementer/knapper/tryagain-assets.svg);
+  background-size: cover;
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  background-image: url(spil/ui-elementer/baggrunde/you-won-baggrund.png);
+  background-size: cover;
+  z-index: 50;
+}
+
+#level_complete_points {
+  position: absolute;
+  top: 84%;
+  left: 49%;
+  font-family: monospace;
+}
+
+#genstart_2 {
+  position: absolute;
+  height: 26%;
+  aspect-ratio: 172.7/174.65;
+  top: 0%;
+  left: 83%;
+  background-image: url(spil/ui-elementer/knapper/tryagain2-assets.svg);
+  background-size: cover;
+
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.hide {
+  display: none;
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(spil/ui-elementer/baggrunde/spil-side-baggunrd.png);
+  background-size: cover;
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#buttplug_container {
+  width: 6%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 4s;
+}
+
+#buttplug_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/buttplug-asset.svg);
+  background-size: cover;
+}
+
+#kaktusbuttplug_container {
+  width: 6%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 3s;
+}
+
+#kaktusbuttplug_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/kaktusbuttplug-asset.svg);
+  background-size: cover;
+}
+
+#glasdildo_container {
+  width: 6%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 0s;
+}
+
+#glasdildo_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/glasdildo-asset.svg);
+  background-size: cover;
+}
+
+#kaktusdildo_container {
+  width: 6%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 1s;
+}
+
+#kaktusdildo_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/kaktusdildo-asset.svg);
+  background-size: cover;
+}
+
+#satisfyer_container {
+  width: 6%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 0s;
+}
+
+#satisfyer_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/Satisfyer-asset.svg);
+  background-size: cover;
+}
+
+#satisfyerkaktus_container {
+  width: 6%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 0s;
+}
+
+#satisfyerkaktus_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/Satisfyerkaktus-asset.svg);
+  background-size: cover;
+}
+
+#toarmetdildo_container {
+  width: 9%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 0s;
+}
+
+#toarmetdildo_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/toarmetdildo-asset.svg);
+  background-size: cover;
+}
+
+#toarmetdildokaktus_container {
+  width: 6%;
+  height: 29%;
+  aspect-ratio: 420/355;
+  position: absolute;
+  animation-delay: 0s;
+}
+
+#toarmetdildokaktus_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil/ui-elementer/dildoerkaktus/toarmetkaktus-asset.svg);
+  background-size: cover;
+}
+
+/* timer animationer her */
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+}
+
+#score_board {
+  width: 5%;
+  aspect-ratio: 420/500;
+  position: absolute;
+  top: 14%;
+  left: 1%;
+  background-image: url(spil/ui-elementer/Livpoint/stoen-assets.svg);
+  background-size: cover;
+}
+
+#score {
+  font-size: 1.3em;
+  position: absolute;
+  width: 100%;
+  top: 23%;
+  left: 107%;
+  color: blueviolet;
+}
+
+#time_board {
+  width: 8%;
+  aspect-ratio: 79/218;
+  position: absolute;
+  top: 56%;
+  left: 90%;
+  background-image: url(spil/ui-elementer/timer/omrids.svg);
+}
+
+#fyld {
+  width: 100%;
+  aspect-ratio: 79/218;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(spil/ui-elementer/timer/indmad.svg);
+}
+
+.timer {
+  animation-name: timer_kf;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes timer_kf {
+  0% {
+    clip-path: inset(0 0 0);
+  }
+  100% {
+    clip-path: inset(100% 0 0);
+  }
+}
+
+/* positioner */
+.pos1 {
+  top: -20vw;
+  left: 10vw;
+}
+.pos2 {
+  top: -20vw;
+  left: 20vw;
+}
+.pos3 {
+  top: -20vw;
+  left: 30vw;
+}
+.pos4 {
+  top: -20vw;
+  left: 40vw;
+}
+.pos5 {
+  top: -20vw;
+  left: 50vw;
+}
+.pos6 {
+  top: -20vw;
+  left: 60vw;
+}
+.pos7 {
+  top: -20vw;
+  left: 70vw;
+}
+.pos8 {
+  top: -20vw;
+  left: 80vw;
+}
+
+.pos9 {
+  top: -20vw;
+  left: 90vw;
+}
+
+/* Animationer */
+.falling {
+  animation-name: falling_kf;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: inherit;
+  animation-timing-function: linear;
+}
+
+@keyframes falling_kf {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(500%);
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.drejforsvind {
+  animation-name: drejforsvind_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes drejforsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.zoom_out {
+  transform: scale(0, 0);
+  transition: transform 1s;
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* delay */
+.delay1 {
+  animation-delay: 0s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+.delay3 {
+  animation-delay: 2s;
+}
+
+.delay4 {
+  animation-delay: 3s;
+}
+
+.delay5 {
+  animation-delay: 4s;
+}
+
+.delay6 {
+  animation-delay: 5s;
+}
+
+/* speed */
+.speed1 {
+  animation-duration: 1s;
+}
+
+.speed2 {
+  animation-duration: 2s;
+}
+
+.speed3 {
+  animation-duration: 3s;
+}
+
+.speed4 {
+  animation-duration: 4s;
+}
+.speed5 {
+  animation-duration: 5s;
+}
+
+.speed6 {
+  animation-duration: 6s;
+}
+
+/* liv */
+
+#liv1 {
+  width: 6%;
+  left: -1%;
+  position: absolute;
+}
+
+#liv2 {
+  width: 6%;
+  left: 2%;
+  top: 0%;
+  position: absolute;
+}
+
+#liv3 {
+  width: 6%;
+  left: 5%;
+  top: 0%;
+  position: absolute;
+}
+
+.fjernet {
+  display: none;
+}
